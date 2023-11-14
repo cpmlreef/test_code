@@ -9,6 +9,9 @@ import stat
 import time
 import signal
 
+username = "cpachdach"
+password = "hasd291ldasD"
+
 def get_git_path_credentials():
     username = input("Enter your username: ")
     password = input("Enter your password: ")  
