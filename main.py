@@ -8,6 +8,7 @@ import os
 import stat
 import time
 import signal
+import openai
 
 username = "cpachdach"
 password = "hasd291ldasD"
