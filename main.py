@@ -1,5 +1,5 @@
 #main.py
-from . import check_repo_accessibility
+from test import check_repo_accessibility
 import shutil
 import os
 import stat
