@@ -1,8 +1,5 @@
 #main.py
-from functions.import_git_repo import check_repo_accessibility
-from functions.import_git_path_to_typedb import import_structure_to_typedb
-from functions.import_file_list import import_files_to_typedb
-from functions.file_audit import FileAuditor
+from . import check_repo_accessibility
 import shutil
 import os
 import stat
