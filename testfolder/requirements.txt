@@ -1,0 +1,4 @@
+os==1.03
+shutil>=2.4.2
+openai
+time==2.3.1
