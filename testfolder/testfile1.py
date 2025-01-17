@@ -2,6 +2,9 @@
 
 from django.urls import path
 from . import views
+import time
+import signal
+import openai
 
 urlpatterns = [
     path('api/get_git_url', views.get_git_path, name='get_git_url'),
