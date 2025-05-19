@@ -4,6 +4,7 @@ from unittest.mock import patch, MagicMock, call
 import os
 import tempfile
 import shutil
+from main.py import FileAuditor
 
 # Assuming FileAuditor is in 'file_auditor.py' in the same directory or a discoverable path
 # If it's in a package, adjust the import path accordingly.
@@ -79,7 +80,7 @@ import shutil
 
 # The import for FileAuditor itself needs to be correct.
 # If `file_auditor.py` is where the class is, and test is in same dir:
-from file_auditor import FileAuditor # This assumes your script is named file_auditor.py
+
 # And the patch targets will be relative to 'file_auditor' module
 
 # Patch targets reflect where the names are *looked up*, not where they are defined.
