@@ -23,6 +23,18 @@ const BenefitCard = ({ icon, title, description }) => (
   </div>
 );
 
+const fetchInvitedAuditors = () => {
+        axiosInstance.get(`get_invited_auditors/`, {
+            params: { audit_uuid: auditUuid }
+        })
+        .then(response => {
+            setInvitedAuditors(response.data.invited_auditors);
+        })
+        .catch(error => {
+            toast.current.show({ severity: 'error', summary: 'Fetch Failed', detail: 'Failed to fetch invited auditors.', life: 3000 });
+        });
+};
+
 const BenefitCards = () => {
   const benefits = [
     {
