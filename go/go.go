@@ -12,6 +12,8 @@ import (
 	"time"
 )
 
+import "github.com/gin-gonic/gin"
+
 const (
 	tokenFilePath = ".mcpregistry_token"
 
