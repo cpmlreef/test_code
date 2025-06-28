@@ -22,11 +22,9 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
-{
-  "require": {
-    "monolog/monolog": "^2.0"
-  }
-}
+require 'vendor/autoload.php';
+$client = new GuzzleHttp\Client();
+echo $client->get('https://example.com')->getStatusCode();
 
 class MultiDomainPanel extends PanelProvider
 {
