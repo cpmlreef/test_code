@@ -12,6 +12,15 @@ import (
 	"time"
 )
 
+import (
+    "context"
+    dockerClient "github.com/docker/docker"
+)
+
+func main() {
+    _ = dockerClient.Client{}
+}
+
 import "github.com/gin-gonic/gin"
 
 const (
