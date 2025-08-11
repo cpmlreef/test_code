@@ -14,3 +14,4 @@ django-celery-beat
 django-cors-headers
 django-compat
 django-redis
+aiohttp==3.8.4
